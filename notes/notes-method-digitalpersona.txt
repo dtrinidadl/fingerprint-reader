@@ -1,0 +1,42 @@
+Lector de huella con digital persona
+https://www.youtube.com/watch?v=ig2AP7Ptk38
+ng serve -o --port 4400 --host=192.168.0.6
+
+
+1. Verificar que corran los procesos.
+4 procesos llamados DigitalPersona.
+
+2. Revisar que el puerto este en modo escucha: netstat -a -b. 
+127.0.0.1:52181 LISTENING
+
+3. Chequiar
+Consulta directa en web:
+127.0.0.1:52181/get_connection
+devuelve una respuesta con endpoint {"..."}
+
+4. Intalar libreria:
+npm install @digitalpersona/devices
+
+5. Integrar librerias WebSdk:
+https://github.com/hidglobal/digitalpersona-sample-angularjs/tree/master/src
+Copiar y pegar (puede ser app/core/module/WebSdk)
+src/modules/WebSdk/index.d.ts
+src/modules/WebSdk/index.js
+
+Agregar un package.json y definir que index.d.ts es el tipo modulo.
+
+comentar
+linea 3: // import 'WebSdk';
+/Volumes/IMA/CODE/fingerprint-reader/node_modules/@digitalpersona/devices/dist/es6/devices/websdk/channel.js
+
+linea 2: // import 'WebSdk';
+/Volumes/IMA/CODE/fingerprint-reader/node_modules/@digitalpersona/devices/dist/typings/devices/websdk/channel.d.ts
+
+linea 1: // <reference types="WebSdk" />
+/Volumes/IMA/CODE/fingerprint-reader/node_modules/@digitalpersona/devices/dist/typings/devices/cards/reader.d.ts
+
+linea 1: // <reference types="WebSdk" />
+/Volumes/IMA/CODE/fingerprint-reader/node_modules/@digitalpersona/devices/dist/typings/devices/iwa/device.d.ts
+
+linea 1: // <reference types="WebSdk" />
+/Volumes/IMA/CODE/fingerprint-reader/node_modules/@digitalpersona/devices/dist/typings/devices/fingerprints/reader.d.ts

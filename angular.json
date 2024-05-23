@@ -32,7 +32,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./src/app/core/modules/WebSdk/index.js",
+              "./node_modules/@digitalpersona/devices/dist/es6.bundles/index.umd.min.js"
+            ]
           },
           "configurations": {
             "production": {

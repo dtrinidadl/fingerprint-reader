@@ -1,0 +1,12 @@
+ng serve -o --port 4400 --host=192.168.0.10
+
+Lector de huella con digital persona
+https://www.youtube.com/watch?v=ig2AP7Ptk38
+
+
+Lector de huella con API de paga
+https://www.youtube.com/watch?v=jWX9P5_jZn8
+
+Lector de huella con Pasaje
+https://www.youtube.com/watch?v=7elewheKysU
+https://docs.passage.id/backend/overview/node

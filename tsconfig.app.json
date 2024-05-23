@@ -3,12 +3,16 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [
+      // "src/app/core/modules/WebSdk"
+      // "./src/app/core/modules/WebSdk"
+    ],
   },
   "files": [
     "src/main.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/app/core/modules/WebSdk/index.d.ts",
   ]
 }
