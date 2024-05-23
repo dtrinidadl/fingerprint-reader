@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-12">
+        <button class="btn btn-primary m-2" (click)="fn_ListaDispositivos()">Listar FP</button>
+        <button class="btn btn-primary m-2" (click)="fn_DeviceInfo()">Info FP</button>
+    </div>
+
+    <div class="col-12">
+        <button class="btn btn-success m-2" (click)="fn_StarCapturaFP()">Start FP</button>
+        <button class="btn btn-danger m-2" (click)="fn_EndCapturaFP()">Stop FP</button>
+    </div>
+
+    <div class="col-12">
+        <button class="btn btn-warning" (click)="fn_CapturaFP()">Mostrar FP</button>
+    </div>
+
+    <div class="col-12">
+        <div class="mt-3">
+            <p class="fs-4">Imagen Base</p>
+            <img class="d-block m-auto" style="width: 100px; height: auto;" id="base64Image"
+                src="data:image/jpeg;base64,{{currentImageFinger}}" />
+        </div>
+        <div>
+            <p>Imagen Corregida</p>
+            <img class="d-block m-auto" style="width: 100px; height: auto;" id="base64ImageFixed"
+                src="data:image/jpeg;base64,{{currentImageFingerFixed}}" />
+        </div>
+    </div>
+</div>
