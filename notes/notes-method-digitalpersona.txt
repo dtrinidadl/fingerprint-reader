@@ -1,6 +1,6 @@
 Lector de huella con digital persona
 https://www.youtube.com/watch?v=ig2AP7Ptk38
-ng serve -o --port 4400 --host=192.168.0.6
+ng serve -o --port 4400 --host=192.168.0.101
 
 
 1. Verificar que corran los procesos.

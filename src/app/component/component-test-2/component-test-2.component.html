@@ -1,0 +1,65 @@
+
+<div *ngIf="$error != undefined">
+    <p class="text-danger">{{$error}}</p>
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div> 
+
+
+<!-- Inicio -->
+<div *ngIf="$error == undefined && view == 'home'" class="row">
+    <div class="col-12 m-2">
+        <button class="btn btn-info" (click)="change_view('new')">Nueva Huella</button>
+    </div>
+    <div class="col-12 m-2">
+        <button class="btn btn-info" (click)="change_view('scan')">Escanear Huella</button>
+    </div>
+</div>
+
+<!-- Nueva Huella -->
+<div *ngIf="$error == undefined && view == 'new'" class="row">
+    <div class="col-12 m-2">
+        <button class="btn btn-outline-secondary btn-sm" (click)="change_view('home')">Atrás</button>
+    </div>
+    <div class="col-12 m-2 position-relative">
+        <div *ngIf="$loading" class="position-absolute top-50 start-50 spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <img 
+            id="base64ImageFixed"
+            class="d-block m-auto" 
+            style="width: 150px; height: auto;"
+            [src]="!currentFingerprint ? image_default : 'data:image/png;base64,' + currentFingerprint" 
+        />
+    </div>
+    <div class="col-12 m-2">
+        <button class="btn btn-warning mx-1" (click)="currentFingerprint = undefined">Nueva</button>
+        <button class="btn mx-1 {{!currentFingerprint ? 'btn-secondary' : 'btn-success'}}" (click)="save_fingerprint()"
+            [disabled]="!currentFingerprint">Guardar</button>
+    </div>
+</div>
+
+<div *ngIf="view == 'scan'" class="row">
+    <div class="col-12 m-2">
+        <button class="btn btn-outline-secondary btn-sm" (click)="change_view('home')">Atrás</button>
+    </div>
+    <div class="col-12 m-2 position-relative">
+        <div *ngIf="$loading" class="position-absolute top-50 start-50 spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <img 
+            id="base64ImageFixed"
+            class="d-block m-auto" 
+            style="width: 150px; height: auto;"
+            [src]="!currentFingerprint ? image_default : 'data:image/png;base64,' + currentFingerprint" 
+        />
+    </div>
+    <div class="col-12 m-2">
+        <button class="btn btn-warning mx-1" (click)="currentFingerprint = undefined; message = ''">Nueva</button>
+        <button class="btn mx-1 {{!currentFingerprint ? 'btn-secondary' : 'btn-success'}}" (click)="search_fingerprint()" [disabled]="!currentFingerprint">Buscar</button>
+    </div>
+    <div class="col-12 m-1">
+        <small class="{{message_type == 1 ? 'text-success' : 'text-danger'}}">{{message}}</small>
+    </div>
+</div>

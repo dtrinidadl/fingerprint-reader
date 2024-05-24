@@ -1,0 +1,20 @@
+Documentacion:
+https://descargas.diprotec.cl/contenido/drivers/Digital-Persona/EikonTouch710/710-SDK-Developer-Guide.pdf
+
+Hash no es viable.
+https://stackoverflow.com/questions/78421602/how-to-compare-two-different-hashes-that-correspond-to-a-single-person
+
+Opciones paga/gratuita
+https://stackoverflow.com/questions/3234629/sdk-for-fingerprint-matching
+
+Repo proyecto
+https://github.com/Ethic41/FingerPrint
+
+MDF con Java
+https://stackoverflow.com/questions/47581676/how-to-compare-fingerprints-using-digital-persona-sdk-from-png-image-or-intermed
+
+Otros dispositivos
+https://www.youtube.com/watch?v=eDP0U7DVw-4
+
+Doc. privada
+https://jomutech.com/javascriptbiometricauthentication/#google_vignette
