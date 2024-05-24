@@ -120,10 +120,7 @@ export class ComponentTutorialComponent  implements OnInit, OnDestroy, AfterCont
 
   //Iniciar Device Para Lectura
   fn_StarCapturaFP() {
-    console.log('DeviceID', this.InfoFingerprintReader['DeviceID']);
-
     Promise.all([
-      // this.reader.startAcquisition(SampleFormat.Raw, this.InfoFingerprintReader['DeviceID'])
       this.reader.startAcquisition(SampleFormat.PngImage, this.InfoFingerprintReader['DeviceID'])
     ])
       .then((response) => {

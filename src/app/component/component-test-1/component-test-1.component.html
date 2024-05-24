@@ -1,15 +1,19 @@
-<!-- <div *ngIf="$error != undefined">
-    <p style="color: red;">{{$error}}</p>
+<div *ngIf="$error != undefined">
+    <p class="text-danger">{{$error}}</p>
 </div>
 <div *ngIf="$error == undefined">
-    <p style="color: green;">Lector de huella en linea.</p>
-
-    <div *ngIf="!currentImageFingerFixed">
-        <div style="margin: 15px auto; background-color: #333; width: 150px; height: 200px;"></div>
+    <button class="btn btn-warning" (click)="view_fingerprint()">Escanera Huella</button>
+    <div *ngIf="!currentFingerprint">
+        <div class="m-auto my-2 bg-secondary" style="width: 150px; height: 200px;"></div>
     </div>
-    <div *ngIf="currentImageFingerFixed">
+    <div *ngIf="currentFingerprint">
         <p>Huella</p>
-        <img id="base64ImageFixed" style="margin: 0px auto; display: block; width: 100px; height: auto;"
-            src="data:image/jpeg;base64,{{currentImageFingerFixed}}" />
+        <img 
+            id="base64ImageFixed" 
+            class="d-block m-auto"
+            style="width: 100px; height: auto;"
+            src="data:image/jpeg;base64,{{currentFingerprint}}" 
+        />
     </div>
-</div> -->
+    <small class="text-success">Lector de huella en linea.</small>
+</div>
