@@ -1,0 +1,42 @@
+Neurotechnology VeriFinger
+image-hash
+
+#m1
+https://stackoverflow.com/questions/596262/image-fingerprint-to-compare-similarity-of-many-images
+https://redaktor.me/phasher/demo_js/index.html#action
+https://phash.org/download/
+https://www.npmjs.com/package/phash
+
+#https://fingerprint.com/blog/browser-fingerprinting-techniques/
+
+#https://github.com/topics/fingerprint-recognition
+https://github.com/mestarshine/fingerprint2js
+
+#Chat GPT:
+-Como verificar que tan similares son 2 imagenes en base64 de unas huellas en un proyecto Angular -R->  OpenCV,
+-Verificar que tan similares son 2 imagenes que estan en base64 en Angular? -R->  image-ssim-angular,
+-image-hash
+-sharp-phash
+
+# opencv4nodejs de OpenCv
+para instalar en Angular es necesario instalar en la MAC opencv y phyton.
+https://www.npmjs.com/package/opencv4nodejs
+https://github.com/justadudewhohacks/opencv4nodejs/issues/733
+opencv
+
+Considera lo siguiente: 
+En un proyecto Angular se quiere utilizar la libreria OpenCV.js para verificar si coincide en un 80% o mas una imagen de una hulla digital, que esta en base64 obtenida desde un API, con una coleccion de imagenes en base64 previamente guardadas en localstorage. 
+Toma en cuenta que no se requiere seguir la normativa de huellas digitales, todas las imagenes tiene el mismo tamaño, tambien que la coleccion de imagenes esta en base64 y cuenta con mas de 100 y se espera se obtenga lo mas pronto posible la respuesta de la validacion.
+Como extra, indica si es conveniente almacenar las imagenes en base64 en otro formato para que agilice la validacion?
+
+
+
+Considera lo siguiente: 
+En un proyecto Angular se quiere utilizar la libreria image-hash. para verificar si coincide en un 80% o mas una imagen de una hulla digital, que esta en base64 obtenida desde un API, con una coleccion de imagenes en base64 previamente guardadas en localstorage. 
+Toma en cuenta que no se requiere seguir la normativa de huellas digitales, todas las imagenes tiene el mismo tamaño, tambien que la coleccion de imagenes esta en base64 y cuenta con mas de 100 y se espera se obtenga lo mas pronto posible la respuesta de la validacion.
+Como extra, indica si es conveniente almacenar las imagenes en base64 en otro formato para que agilice la validacion?
+
+Considera lo siguiente: 
+En un proyecto Angular se quiere utilizar la libreria  image-ssim-angular para verificar si coincide en un 80% o mas una imagen de una hulla digital, que esta en base64 obtenida desde un API, con una coleccion de imagenes en base64 previamente guardadas en localstorage. 
+Toma en cuenta que no se requiere seguir la normativa de huellas digitales, todas las imagenes tiene el mismo tamaño, tambien que la coleccion de imagenes esta en base64 y cuenta con mas de 100 y se espera se obtenga lo mas pronto posible la respuesta de la validacion.
+Como extra, indica si es conveniente almacenar las imagenes en base64 en otro formato para que agilice la validacion?

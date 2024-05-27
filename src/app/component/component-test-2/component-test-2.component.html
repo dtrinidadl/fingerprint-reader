@@ -58,6 +58,7 @@
     <div class="col-12 m-2">
         <button class="btn btn-warning mx-1" (click)="currentFingerprint = undefined; message = ''">Nueva</button>
         <button class="btn mx-1 {{!currentFingerprint ? 'btn-secondary' : 'btn-success'}}" (click)="search_fingerprint()" [disabled]="!currentFingerprint">Buscar</button>
+        <button class="btn mx-1 {{!currentFingerprint ? 'btn-secondary' : 'btn-success'}}" (click)="search_hash_fingerprint()" [disabled]="!currentFingerprint">Buscar Hash</button>
     </div>
     <div class="col-12 m-1">
         <small class="{{message_type == 1 ? 'text-success' : 'text-danger'}}">{{message}}</small>
